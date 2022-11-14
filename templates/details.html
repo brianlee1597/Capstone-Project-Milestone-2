@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'detail.js') }}"></script>
+
+
+<script>
+    let detail_bank = {{detail_bank|tojson}} 
+    console.log(detail_bank)
+    let key = {{key|tojson}}
+    console.log(key)
+    
+</script>
+
+<div id = "detailcontainer">
+    <div class ='ycgraybg'>
+        <span id="ycimgdetail"></span>
+        
+        <span class="ycdetailtitle" id="ycdetailtitle"></span>
+    </div>
+    <!--
+    <div class = "ycdetailtitle"><img src="">Flower 1</div>
+    -->
+
+    <div class="ycdetailcontainer">
+        <div class = "ycsubtitle">
+            Meanings and Origins
+        </div>
+        <div class = "ycsubcontent" id="ycmocotent">
+            update data here.
+        </div>
+
+        <div  class = "ycsubtitle">
+            Colors
+        </div>
+        <div class = "ycsubcontent" id="yccolorcontent">
+            update data here.
+        </div>
+        
+    </div>
+    <hr>
+    <div class = "ycbottombar" id="ycback">    
+        <button id="backtoculture" class='ycbutton'>Back</button>
+        
+
+        <!--
+        <form>
+            <input id="backtoculture" class='ycbutton' type="submit" value="Back" />
+        </form>
+        -->
+    </div>
+
+</div>
+
+
+{% endblock %}

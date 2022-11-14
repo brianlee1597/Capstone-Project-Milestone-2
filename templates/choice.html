@@ -1,0 +1,83 @@
+{% extends "layout.html" %} {% block content %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'choice.js') }}"
+></script>
+
+<script>
+  let question = {{question|tojson}}
+  let quiz_id = {{quiz_id|tojson}}
+  let answered = {{answered|tojson}}
+  let saved_answers = {{saved_answers|tojson}}
+</script>
+
+<div class="row">
+  <div class="col-md-4">
+    <div id="score_board">Score: {{score}}</div>
+  </div>
+  <div class="col-md-6">
+    <div id="questions_nav"></div>
+  </div>
+  <div class="col-md-2">
+    <div class="ycb" id="next_button">Next<i class="arrow right"></i></div>
+  </div>
+</div>
+
+<div id="multiple_choice_question_container">
+  This is a multiple choice question. Please select the best answer from the
+  choices provided
+  <div id="question"></div>
+  <div class="row">
+    <div class="col-md-4">
+      <div id="multiple_choice_picture">
+        <img src="" id="flower_picture" alt="lily" width="300" />
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div id="multiple_choice_choices">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row choice_container">
+              <div class="col-md-1">
+                <div class="selection_box" id="selection_box_0"></div>
+              </div>
+              <div class="col-md-10" id="label_0"></div>
+            </div>
+            <div class="row choice_container">
+              <div class="col-md-1">
+                <div class="selection_box" id="selection_box_1"></div>
+              </div>
+              <div class="col-md-10" id="label_1"></div>
+            </div>
+            <div class="row choice_container">
+              <div class="col-md-1">
+                <div class="selection_box" id="selection_box_2"></div>
+              </div>
+              <div class="col-md-10" id="label_2"></div>
+            </div>
+            <div class="row choice_container">
+              <div class="col-md-1">
+                <div class="selection_box" id="selection_box_3"></div>
+              </div>
+              <div class="col-md-10" id="label_3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div id="hint_box">
+        <div class="row">
+          <div id="hint_flower"></div>
+        </div>
+        <div class="row">
+          <div id="hint_content_1"></div>
+        </div>
+        <div class="row">
+          <div id="hint_content_2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

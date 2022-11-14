@@ -1,0 +1,177 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'match.js') }}"></script>
+        
+    
+    <script>
+        let question = {{question|tojson}} 
+        console.log(question)
+    </script>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="score_board">
+                Score: 100
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="questions_nav">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="ycb" id="next_button">
+                Next<i class="arrow right"></i>
+            </div>
+        </div>
+    </div>
+    <div id="matching_question_container">
+        This is a matching question. Please match flowers with their meanings
+        <div id="question">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="matching_flowers_container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="matching_flower_card">
+                                <div class="row">
+                                    <div class="matching_flower_name" id="flower_name_1">
+                                        flower1
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="matching_flower_picture">
+                                        <img src="" id="flower_picture_1" alt="lily" width="100%">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="selection_box" id="selected_flower_1"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="matching_flower_card">
+                                <div class="row">
+                                    <div class="matching_flower_name" id="flower_name_2">
+                                        flower2
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="matching_flower_picture">
+                                        <img src="" id="flower_picture_2" alt="lily" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selection_box" id="selected_flower_2"></div>  
+                        </div>
+                        <div class="col-md-3">
+                            <div class="matching_flower_card">
+                                <div class="row">
+                                    <div class="matching_flower_name" id="flower_name_3">
+                                        flower3
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="matching_flower_picture">
+                                        <img src="" id="flower_picture_3" alt="lily" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selection_box" id="selected_flower_3"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="matching_flower_card">
+                                <div class="row">
+                                    <div class="matching_flower_name" id="flower_name_4">
+                                        flower4
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="matching_flower_picture">
+                                        <img src="" id="flower_picture_4" alt="lily" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selection_box" id="selected_flower_4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="matching_meanings_container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="selection_box" id="selected_meaning_1"></div>
+                            <div class="matching_meaning_card">
+                                <div class="matching_flower_meaning" id="meaning_1">
+                                    flower meaning 1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selection_box" id="selected_meaning_2"></div>
+                            <div class="matching_meaning_card">
+                                <div class="matching_flower_meaning" id="meaning_2">
+                                    flower meaning 2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selection_box" id="selected_meaning_3"></div>
+                            <div class="matching_meaning_card">
+                                <div class="matching_flower_meaning" id="meaning_3">
+                                    flower meaning 3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selection_box" id="selected_meaning_4"></div>
+                            <div class="matching_meaning_card">
+                                <div class="matching_flower_meaning" id="meaning_4">
+                                    flower meaning 4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="matching_hints_container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="matching_hint_card">
+                                <div class="matching_flower_hint" id="hint_1">
+                                    hint 1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="matching_hint_card">
+                                <div class="matching_flower_hint" id="hint_2">
+                                    hint 2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="matching_hint_card">
+                                <div class="matching_flower_hint" id="hint_3">
+                                    hint 3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="matching_hint_card">
+                                <div class="matching_flower_hint" id="hint_4">
+                                    hint 4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

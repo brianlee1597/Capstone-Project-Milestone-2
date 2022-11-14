@@ -1,0 +1,444 @@
+body {
+  background-color: E6E6FA;
+}
+
+#nice_font{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.draggable {
+  margin: 10px;
+  padding-top: 20px;
+  background-color: white;
+  border: 1px solid grey;
+  height: 70px;
+  width: 300px;
+  text-align: center;
+  font-size: medium;
+}
+
+.droppable {
+  margin: 10px;
+  padding-top: 20px;
+  background-color: lightcyan;
+  border: 1px solid grey;
+  height: 70px;
+  width: 200px;
+  text-align: center;
+}
+
+#score_board {
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+#questions_nav {
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+#next_button {
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+#quiz_questions_listing {
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.quiz_question_entry {
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+}
+
+.listing {
+  padding: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+#multiple_choice_question_container {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#multiple_choice_picture {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#multiple_choice_choices {
+  padding-top: 50px;
+}
+
+#matching_question_container {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#drag_n_drop_question_container {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#matching_question_flowers {
+  padding-left: 15px;
+}
+
+.ycintro {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.ycpinkblock {
+  background-color: #fdc5e7;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ycmiddle {
+  margin-left: 35px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding-left: 60px;
+  width: 400px;
+}
+
+.ycbutton {
+  width: 160px;
+  background-color: white;
+  color: black;
+  border: 2px solid #fdc5e7;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+}
+
+.ycbutton:hover {
+  background-color: #fdc5e7;
+  color: white;
+}
+
+.ycnavbg {
+  background-color: #fce7f3;
+}
+
+.ycculture {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ycb {
+  width: 160px;
+  background-color: white;
+  color: black;
+  border: 2px solid #fdc5e7;
+  padding: 5px 7px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 4px 2px;
+  transition-duration: 0.3s;
+}
+
+.ycb:hover {
+  background-color: #fdc5e7;
+  color: white;
+}
+
+.ycsmall {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.ycsmallbut {
+  background-color: #329fff;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  transition-duration: 0.3s;
+  display: inline-block;
+  width: 100px;
+}
+
+.ycsmallbut:hover {
+  background-color: white;
+  color: #329fff;
+  border: 1px solid #329fff;
+  cursor: pointer;
+}
+
+.ycsmallpic {
+  max-height: 80px;
+  border-radius: 50%;
+  z-index: 100;
+  display: inline-block;
+}
+
+.ycflowertitle {
+  background-color: #fdc5e7;
+  font-size: 23px;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: -30px;
+  padding-left: 40px;
+  display: inline-block;
+  position: absolute;
+  z-index: -99;
+}
+
+.ycdetailtitle {
+  text-align: center;
+  background-color: rgb(232, 232, 232);
+  font-size: 23px;
+  font-weight: bold;
+  width: 630px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: -30px;
+  padding-left: 10px;
+  display: inline-block;
+  position: absolute;
+  z-index: -99;
+}
+
+.ycflowerinfo {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.ycdragblock {
+  border-right: 2px solid lightgray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ycinline {
+  display: inline-block;
+}
+
+.ycsubtitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ycdetailcontainer {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.ycsubcontent {
+  padding-left: 25px;
+}
+
+.ycgraybg {
+  margin-top: 15px;
+}
+
+#detailcontainer {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#yclink1,
+#yclink2,
+#yclink3 {
+  padding-left: 170px;
+}
+
+.selection_box {
+  margin: 0 auto;
+  background-color: grey;
+  padding: 0px;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.choice_container {
+  margin-bottom: 10px;
+}
+
+#hint_box {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 25px;
+}
+
+#hint_flower {
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+#hint_content_1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#hint_content_2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#matching_flowers_container {
+  margin: 20px;
+  width: 100%;
+  height: 300px;
+}
+
+#matching_meanings_container {
+  margin: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+#matching_hints_container {
+  margin: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.matching_flower_card {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.matching_meaning_card {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+
+.matching_hint_card {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+.matching_flower_name {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.matching_flower_picture {
+  margin: 0 auto;
+  margin-left: 35px;
+  width: 160px;
+}
+
+.matching_flower_meaning {
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.matching_flower_hint {
+  margin: 20px;
+  margin-top: 10px;
+  color: lightgreen;
+}
+
+.highlight-score {
+  color: #329fff;
+  font-weight: bold;
+}
+
+#leaderboard {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#score-report {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+}
+#score-report-container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#score-report-container button {
+  width: 50%;
+}
+
+#new_quiz_button {  
+  width: 200px;
+  background-color: white;
+  color: black;
+  border: 2px solid #fdc5e7;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 0px;
+  transition-duration: 0.3s;
+}
+
+#new_quiz_button:hover{
+  background-color: #fdc5e7;
+  color: white;
+
+}

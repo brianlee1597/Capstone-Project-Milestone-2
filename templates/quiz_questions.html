@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% block content %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'quiz_questions.js') }}"
+></script>
+
+<script>
+  let questions = {{questions|tojson}}
+  let answered = {{answered|tojson}}
+  let saved_answers = {{saved_answers|tojson}}
+</script>
+
+<span class="ycintro">Test out your new flower knowledge with this quiz!</span>
+
+<div id="score_board">Score: {{score}}</div>
+<div id="quiz_questions_listing"></div>
+
+<div class="ycb" id="new_quiz_button"  type="submit">start new quiz</div>
+
+<span id="quiz_img"></span>
+
+{% endblock %}
+
+
+
+
