@@ -1,76 +1,82 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'welcome.js') }}"
+></script>
 
-{% block content %}
-<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+<div class="ycintro">
+  This website supports text-to-speech not only for the learning material, but
+  for the entire website.
+</div>
 
-<div class = "ycintro">Flowers are a common gift that you can get someone for special occasions, or just to brighten up their day.</div>
+<div class="ycintro">
+  <b
+    >Learn different languages so you can enhance your travels or
+    relationships!</b
+  >
+</div>
 
-<div class = "ycintro"><b>Learn how to make the flowers you gift meaningful and appropriate for different cultures!</b></div>
+<div class="yccontainer1">
+  <div class="row">
+    <div id="ycblock1" class="col-md-6">
+      <div class="ycblueblock">Start Learning</div>
+      <div class="ycmiddle">Choose a language!</div>
+      <div class="ycmiddle">
+        <div>
+          <div class="ycinline">
+            <form class="ycform" action="/language/korean">
+              <input class="ycbutton" type="submit" value="Korean" />
+            </form>
+          </div>
 
-
-<div class = "yccontainer1">
-    <div class = "row">
-        <div id="ycblock1" class = "col-md-6">
-            <div class = "ycpinkblock">Start Learning</div>
-            <div class= "ycmiddle">Choose a culture!
-            </div>
-            <div class="ycmiddle">
-                <div>
-                    <div class="ycinline">
-                        <form class='ycform' action="/culture/1">
-                            <input class='ycbutton' type="submit" value="Asia" />
-                        </form>
-                    </div>
-
-                    <div class="ycinline">
-                        <form class='ycform' action="/culture/2">
-                            <input class='ycbutton' type="submit" value="Africa" />
-                        </form>
-                    </div>
-                    
-                </div>
-                <div>
-                    <div class="ycinline">
-                        <form action="/culture/3">
-                            <input class='ycbutton' type="submit" value="Europe" />
-                        </form>
-                    </div>
-                    <div class="ycinline">
-                        <form action="/culture/4">
-                            <input class='ycbutton' type="submit" value="N. America" />
-                        </form>
-                    </div>
-                </div>
-            </div>
+          <div class="ycinline">
+            <form class="ycform" action="/language/french">
+              <input class="ycbutton" type="submit" value="French" disabled />
+            </form>
+          </div>
         </div>
-        <div id="ycblock1" class = "col-md-6">
-            <div class = "ycpinkblock">Test Yourself</div>
-            <div class= "ycmiddle">Confident in your knowledge of flower meanings? 
-                Go directly to the quiz!
-            </div>
-            <div class="ycmiddle">
-                <div>
-                    <form action="/quiz/all">
-                        <input class='ycbutton' type="submit" value="Start Quiz" />
-                    </form>
-
-                    <!-- <button class='ycbutton' href="/quiz/all">Start Quiz</button>--> 
-                </div>
-            </div>
+        <div>
+          <div class="ycinline">
+            <form action="/language/spanish">
+              <input class="ycbutton" type="submit" value="Spanish" disabled />
+            </form>
+          </div>
+          <div class="ycinline">
+            <form action="/language/chinese">
+              <input class="ycbutton" type="submit" value="Chinese" disabled />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <hr>
+    <div id="ycblock1" class="col-md-6">
+      <div class="ycblueblock">Test Yourself</div>
+      <div class="ycmiddle">
+        Confident in your language(s) knowledge? Go directly to the quiz!
+      </div>
+      <div class="ycmiddle">
+        <div>
+          <form action="/quiz/all">
+            <input class="ycbutton" type="submit" value="Start Quiz" disabled />
+          </form>
 
-    <img class="ycsmallpic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Small_Red_Rose.JPG/1200px-Small_Red_Rose.JPG" alt="Red Rose">
-    <img class="ycsmallpic" src="https://www.ftd.com/blog/wp-content/uploads/2018/10/caring-for-orchids-hero.jpg" alt="Orchid">
-    <img class="ycsmallpic" src="https://asianinspirations.com.au/wp-content/uploads/2021/09/Language-of-Flowers-04-Peonies.jpg" alt="Peony">
-    <img class="ycsmallpic" src="https://hosstools.com/wp-content/uploads/2020/10/black-oil-sunflower.jpg" alt="Sunflower">
-    <img class="ycsmallpic" src="https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/daffodil.jpg?itok=K-j38VoY" alt="Daffodil">
-    <img class="ycsmallpic" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-590634523-2-1493049119.jpg?crop=1.00xw:0.753xh;0,0.0685xh&resize=480:*" alt="Lotus">
-    <img class="ycsmallpic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbapEe_TzDZu8gePTc4IElapjL01Ks51ZL3Q&usqp=" alt="Lilac">
-    <img class="ycsmallpic" src="https://s3.envato.com/files/bd4e7c6c-f8b4-470c-af36-6d3bae5d4d6a/inline_image_preview.jpg" alt="Chrysanthemum">
+          <!-- <button class='ycbutton' href="/quiz/all">Start Quiz</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <hr />
 
+  <img class="ycsmallpic" src="/static/images/cn.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/de.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/fr.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/gb.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/jp.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/kr.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/lr.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/dk.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/no.webp" alt="flag" />
+  <img class="ycsmallpic" src="/static/images/fi.webp" alt="flag" />
 </div>
 {% endblock %}

@@ -2,8 +2,8 @@ body {
   background-color: E6E6FA;
 }
 
-#nice_font{
-  font-family: 'Lato', sans-serif;
+#nice_font {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -98,8 +98,8 @@ body {
   font-size: 16px;
 }
 
-.ycpinkblock {
-  background-color: #fdc5e7;
+.ycblueblock {
+  background-color: #7cb9e8;
   text-align: center;
   font-size: 23px;
   font-weight: bold;
@@ -119,7 +119,7 @@ body {
   width: 160px;
   background-color: white;
   color: black;
-  border: 2px solid #fdc5e7;
+  border: 2px solid #7cb9e8;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
@@ -129,15 +129,15 @@ body {
 }
 
 .ycbutton:hover {
-  background-color: #fdc5e7;
+  background-color: #7cb9e8;
   color: white;
 }
 
 .ycnavbg {
-  background-color: #fce7f3;
+  background-color: #f0f8ff;
 }
 
-.ycculture {
+.yclanguage {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
@@ -147,7 +147,7 @@ body {
   width: 160px;
   background-color: white;
   color: black;
-  border: 2px solid #fdc5e7;
+  border: 2px solid #7cb9e8;
   padding: 5px 7px;
   text-align: center;
   display: inline-block;
@@ -157,7 +157,7 @@ body {
 }
 
 .ycb:hover {
-  background-color: #fdc5e7;
+  background-color: #7cb9e8;
   color: white;
 }
 
@@ -219,7 +219,7 @@ body {
 }
 
 .ycflowertitle {
-  background-color: #fdc5e7;
+  background-color: #7cb9e8;
   font-size: 23px;
   font-weight: bold;
   width: 200px;
@@ -423,11 +423,11 @@ body {
   width: 50%;
 }
 
-#new_quiz_button {  
+#new_quiz_button {
   width: 200px;
   background-color: white;
   color: black;
-  border: 2px solid #fdc5e7;
+  border: 2px solid #7cb9e8;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
@@ -437,8 +437,7 @@ body {
   transition-duration: 0.3s;
 }
 
-#new_quiz_button:hover{
-  background-color: #fdc5e7;
+#new_quiz_button:hover {
+  background-color: #7cb9e8;
   color: white;
-
 }
