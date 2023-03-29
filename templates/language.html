@@ -6,22 +6,21 @@
     {% for word in language['words'] %}
     <div class="col-md-4">
       <div class="ycdragblock">
-        <div class="ycpinkbg">
-          <span id="ycimg1">
-            <img class='ycsmallpic' src="{{word['img']}}" alt='flower1'></img>
+        <div>
+          <span>
+            <img class="ycsmallpic" src="{{word['img']}}" alt="word_image" />
           </span>
 
-          <span class="ycflowertitle" id="ycflower1">{{word['word']}}</span>
+          <span class="ycwordtitle">{{word['word']}}</span>
         </div>
 
-        <div class="ycflowerinfo">
+        <div class="ycwordinfo">
           <span class="bold">Meaning: </span>
-          <span id="ycmeaning1">{{word['meaning']}}</span>
+          <span>{{word['meaning']}}</span>
           <div>
             <span class="bold">Origins: </span>
-            <span id="ycorigins1">Something Placeholder</span>
+            <span>Something Placeholder</span>
           </div>
-          <span id="yclink1"></span>
         </div>
       </div>
     </div>

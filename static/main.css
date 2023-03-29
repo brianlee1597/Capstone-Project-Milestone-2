@@ -218,7 +218,7 @@ body {
   display: inline-block;
 }
 
-.ycflowertitle {
+.ycwordtitle {
   background-color: #7cb9e8;
   font-size: 23px;
   font-weight: bold;
@@ -247,7 +247,7 @@ body {
   z-index: -99;
 }
 
-.ycflowerinfo {
+.ycwordinfo {
   margin-left: 10px;
   margin-right: 15px;
 }
